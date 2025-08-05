@@ -1,0 +1,53 @@
+# Azure Arc HomeLab - .gitignore
+
+# Arquivos sensíveis - NUNCA COMMITAR
+*.secret
+*.key
+*client-secret*
+*service-principal*
+config.json
+.env
+*.env
+
+# Logs
+*.log
+logs/
+*.tmp
+
+# Scripts modificados com credenciais
+*-production.ps1
+*-production.sh
+*-prod.*
+
+# Arquivos de backup
+*.bak
+*.backup
+*~
+
+# Arquivos do sistema operacional
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Arquivos temporários do editor
+*.swp
+*.swo
+*~
+.vscode/settings.json
+
+# Arquivos de instalação baixados
+*.msi
+AzureConnectedMachineAgent.msi
+install_linux_azcmagent.sh
+
+# Certificados
+*.pfx
+*.p12
+*.pem
+*.crt
+*.cer
+
+# Diretórios temporários
+temp/
+tmp/
+cache/
