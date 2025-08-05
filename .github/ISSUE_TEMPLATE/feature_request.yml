@@ -1,0 +1,71 @@
+name: ✨ Feature Request
+description: Sugerir uma nova funcionalidade ou melhoria
+title: "[FEATURE] "
+labels: ["enhancement", "needs-review"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Obrigado por sugerir uma melhoria! Por favor, descreva sua ideia.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problema/Necessidade
+      description: Qual problema esta funcionalidade resolveria?
+      placeholder: Descreva o problema ou necessidade...
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Solução Proposta
+      description: Como você gostaria que esta funcionalidade funcionasse?
+      placeholder: Descreva a solução desejada...
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternativas Consideradas
+      description: Você considerou outras soluções?
+      placeholder: Descreva alternativas que você considerou...
+    validations:
+      required: false
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Prioridade
+      description: Qual a prioridade desta funcionalidade?
+      options:
+        - Baixa - seria legal ter
+        - Média - melhoraria significativamente o projeto
+        - Alta - crítica para o projeto
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Escopo
+      description: Que áreas seriam afetadas?
+      options:
+        - label: Scripts de instalação
+        - label: Documentação
+        - label: Monitoramento
+        - label: Políticas Azure
+        - label: Segurança
+        - label: Automação
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Informações Adicionais
+      description: Qualquer informação adicional sobre esta funcionalidade
+      placeholder: Screenshots, mockups, links úteis, etc.
+    validations:
+      required: false
